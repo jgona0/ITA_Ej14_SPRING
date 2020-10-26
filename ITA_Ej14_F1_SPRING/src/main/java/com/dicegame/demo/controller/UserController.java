@@ -36,7 +36,28 @@ public class UserController {
 	// CREATE user
 	@PostMapping("/players")
 	public User postUser(@RequestBody User user) {
-		return userServiceImpl.createUser(user);
+		
+		List<User> users;
+		
+		// si el usuario se llama anónimo lo crearemos
+		if (user.getName().equalsIgnoreCase("ANONIMO")){			
+			return userServiceImpl.createUser(user);
+
+		// sino, miramos el toda la lista de usuarios si hay alguien que se llame como el, si ya lo hay, no lo crearemos	
+		}else {
+			
+			users = userServiceImpl.selectAllUsers();
+			
+			if (users.stream().filter(x -> x.getName().toUpperCase().equals(user.getName().toUpperCase())).count() != 0) {
+			
+				System.out.println("No se puede crear el usuario, tiene el mismo nombre que otro ");
+				return null;
+
+			}else {
+				return userServiceImpl.createUser(user);
+
+			}	
+		}	
 	}
 	
 	

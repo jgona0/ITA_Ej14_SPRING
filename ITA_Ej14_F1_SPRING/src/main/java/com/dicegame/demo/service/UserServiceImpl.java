@@ -34,7 +34,7 @@ public class UserServiceImpl implements IUserService {
 		return iUserDAO.findById(id).get();
 	}
 	
-
+	
 	@Override
 	public User updateUser(User user) {
 		return iUserDAO.save(user);
