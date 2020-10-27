@@ -7,7 +7,7 @@ import com.dicegame.demo.dto.Roll;
 public interface IRollService {
 
 	
-	public Roll createRoll(Roll roll);	//Crea un user (asociado a un user)
+	public Roll createRoll(Roll roll);	//Crea una roll (asociado a un user)
 	
 	public List<Roll> selectAllRolls(); //Seleccionar todas las rolls 
 	

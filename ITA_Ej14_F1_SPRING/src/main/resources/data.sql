@@ -22,7 +22,7 @@ CREATE TABLE `dicegame`.`roll` (
 
 insert into `dicegame`.`user`(name, porc_success) values('Xavi', 0.0 );
 insert into `dicegame`.`user`(name, porc_success) values('Ainhoa', 100.0);
-insert into `dicegame`.`user`(name, porc_success) values('Maialen', 33.00);
+insert into `dicegame`.`user`(name, porc_success) values('Maialen', 33.33);
 
 
 insert into `dicegame`.`roll`(dice_one, dice_two, total_roll, result, user_id) values(1, 2, 3, 'LOSE', 1);

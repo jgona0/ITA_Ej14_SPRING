@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.dicegame.demo.dao.IUserDAO;
 import com.dicegame.demo.dto.User;
 
+// Capa de implementación del servicio
 
 @Service
 public class UserServiceImpl implements IUserService {

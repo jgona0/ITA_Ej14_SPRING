@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.dicegame.demo.dao.IRollDAO;
 import com.dicegame.demo.dto.Roll;
 
-
+//Capa de implementación del servicio
 
 @Service
 public class RollServiceImpl implements IRollService{

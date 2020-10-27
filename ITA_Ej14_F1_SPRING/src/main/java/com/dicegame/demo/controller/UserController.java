@@ -111,7 +111,7 @@ public class UserController {
 		User user_to_updt = userServiceImpl.selectUserById(id);
 		System.out.println("Se actualiza el user: " +user_to_updt);
 		
-		//Setteamos su nombre y capacidad
+		//Setteamos su nombre
 		user_to_updt.setName(user.getName());
 		
 		// asignamos la actualización y retornamos el objeto actualizado
