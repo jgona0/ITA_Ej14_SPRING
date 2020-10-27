@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "5f96aae7eeed0b76866355d7"
+  },
+  "name": "Xavi",
+  "porc_success": {
+    "$numberDecimal": "0"
+  }
+},{
+  "_id": {
+    "$oid": "5f96aae7eeed0b76866355d9"
+  },
+  "name": "Ainhoa",
+  "porc_success": 100
+},{
+  "_id": {
+    "$oid": "5f97f7045489e918f443090b"
+  },
+  "name": "Maialen",
+  "porc_success": 33.33
+}]

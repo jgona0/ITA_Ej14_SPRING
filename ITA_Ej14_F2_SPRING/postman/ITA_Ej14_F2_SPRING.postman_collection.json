@@ -1,0 +1,321 @@
+{
+	"info": {
+		"_postman_id": "d660331f-f249-41ad-8f79-8d05294d4ffc",
+		"name": "ITA_Ej14_F2_SPRING",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "Get all users & %exit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user by NAME",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/Xavi",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								"Xavi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get total ranking",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/ranking",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								"ranking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get winner player",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/ranking/winner",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								"ranking",
+								"winner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get loser player",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/ranking/loser",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								"ranking",
+								"loser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user by NAME",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/Ainhoa",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								"Ainhoa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"New User\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new user Repeated",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Xavi\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"name\": \"PlayerUpdt\"\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/Maialen",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								"Maialen"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "ROLL",
+			"item": [
+				{
+					"name": "Get all rolls",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/games",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"games"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get rolls by NAME User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/Xavi/games",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								"Xavi",
+								"games"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete all rolls by NAME User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/Xavi/games",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								"Xavi",
+								"games"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new roll",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/Xavi/games",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								"Xavi",
+								"games"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

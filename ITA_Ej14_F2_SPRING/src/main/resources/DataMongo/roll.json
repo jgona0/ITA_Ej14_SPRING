@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "5f96c203eeed0b76866355da"
+  },
+  "dice_one": 1,
+  "dice_two": 2,
+  "total_roll": 3,
+  "result": "LOSE",
+  "user": "5f96aae7eeed0b76866355d7"
+},{
+  "_id": {
+    "$oid": "5f96c203eeed0b76866355db"
+  },
+  "dice_one": 1,
+  "dice_two": 6,
+  "total_roll": 7,
+  "result": "WIN",
+  "user": "5f96aae7eeed0b76866355d9"
+},{
+  "_id": {
+    "$oid": "5f96c203eeed0b76866355dc"
+  },
+  "dice_one": 1,
+  "dice_two": 2,
+  "total_roll": 3,
+  "result": "LOSE",
+  "user": "5f97f7045489e918f443090b"
+},{
+  "_id": {
+    "$oid": "5f96c203eeed0b76866355dd"
+  },
+  "dice_one": 1,
+  "dice_two": 2,
+  "total_roll": 3,
+  "result": "LOSE",
+  "user": "5f97f7045489e918f443090b"
+},{
+  "_id": {
+    "$oid": "5f96c203eeed0b76866355de"
+  },
+  "dice_one": 5,
+  "dice_two": 2,
+  "total_roll": 7,
+  "result": "WIN",
+  "user": "5f97f7045489e918f443090b"
+}]
