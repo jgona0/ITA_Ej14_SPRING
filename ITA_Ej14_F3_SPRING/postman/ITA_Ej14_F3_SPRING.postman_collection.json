@@ -1,0 +1,582 @@
+{
+	"info": {
+		"_postman_id": "3a619c34-3c0b-4e7e-865c-b7ca11779c99",
+		"name": "ITA_Ej14_F3_SPRING",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "Get all users & %exit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjA0NTE1NjkyLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.SmnxLOAaoXI5kfJ4QP1F-a_eZqckhSEziVtv_rXhHpfmygbPpgKn9PVHUsvXSrnUUM741iqIL7zREekXeTKTbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user by ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjA0NTE1NjkyLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.SmnxLOAaoXI5kfJ4QP1F-a_eZqckhSEziVtv_rXhHpfmygbPpgKn9PVHUsvXSrnUUM741iqIL7zREekXeTKTbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/2",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get total ranking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjA0NTE1NjkyLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.SmnxLOAaoXI5kfJ4QP1F-a_eZqckhSEziVtv_rXhHpfmygbPpgKn9PVHUsvXSrnUUM741iqIL7zREekXeTKTbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/ranking",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								"ranking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get winner player",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjA0NTE1NjkyLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.SmnxLOAaoXI5kfJ4QP1F-a_eZqckhSEziVtv_rXhHpfmygbPpgKn9PVHUsvXSrnUUM741iqIL7zREekXeTKTbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/ranking/winner",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								"ranking",
+								"winner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get loser player",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjA0NTE1NjkyLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.SmnxLOAaoXI5kfJ4QP1F-a_eZqckhSEziVtv_rXhHpfmygbPpgKn9PVHUsvXSrnUUM741iqIL7zREekXeTKTbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/ranking/loser",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								"ranking",
+								"loser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user by ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjA0NTE1NjkyLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.SmnxLOAaoXI5kfJ4QP1F-a_eZqckhSEziVtv_rXhHpfmygbPpgKn9PVHUsvXSrnUUM741iqIL7zREekXeTKTbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/1",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjA0NTE1NjkyLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.SmnxLOAaoXI5kfJ4QP1F-a_eZqckhSEziVtv_rXhHpfmygbPpgKn9PVHUsvXSrnUUM741iqIL7zREekXeTKTbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"New User Cool\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new user (repeated)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjA0NTE1NjkyLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.SmnxLOAaoXI5kfJ4QP1F-a_eZqckhSEziVtv_rXhHpfmygbPpgKn9PVHUsvXSrnUUM741iqIL7zREekXeTKTbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Ainhoa\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new user Anonimo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjA0NTE1NjkyLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.SmnxLOAaoXI5kfJ4QP1F-a_eZqckhSEziVtv_rXhHpfmygbPpgKn9PVHUsvXSrnUUM741iqIL7zREekXeTKTbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Anonimo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjA0NTE1NjkyLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.SmnxLOAaoXI5kfJ4QP1F-a_eZqckhSEziVtv_rXhHpfmygbPpgKn9PVHUsvXSrnUUM741iqIL7zREekXeTKTbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"name\": \"PlayerUpdt\"\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/4",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "ROLL",
+			"item": [
+				{
+					"name": "Get all rolls",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjA0NTE2MDEyLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.bHcVDAEVUs5uNDPmUjAP3gmUWC4Gkj-skTByw6oxCImuuhzU9B2Wm7522JQVP33HMzAM5np9bGB_ocZt7WCKLQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/games",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"games"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get roll by ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjA0NTE2MDEyLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.bHcVDAEVUs5uNDPmUjAP3gmUWC4Gkj-skTByw6oxCImuuhzU9B2Wm7522JQVP33HMzAM5np9bGB_ocZt7WCKLQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/games/3",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"games",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get rolls by ID User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjA0NTE2MDEyLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.bHcVDAEVUs5uNDPmUjAP3gmUWC4Gkj-skTByw6oxCImuuhzU9B2Wm7522JQVP33HMzAM5np9bGB_ocZt7WCKLQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/3/games",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								"3",
+								"games"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete all rolls by ID User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjA0NTE2MDEyLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.bHcVDAEVUs5uNDPmUjAP3gmUWC4Gkj-skTByw6oxCImuuhzU9B2Wm7522JQVP33HMzAM5np9bGB_ocZt7WCKLQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/3/games",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								"3",
+								"games"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new roll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjA0NTE2MDEyLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXX0.bHcVDAEVUs5uNDPmUjAP3gmUWC4Gkj-skTByw6oxCImuuhzU9B2Wm7522JQVP33HMzAM5np9bGB_ocZt7WCKLQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}:{{port}}/api/players/3/games",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"players",
+								"3",
+								"games"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "LOGIN",
+			"item": [
+				{
+					"name": "Login ADMIN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"name\": \"admin\",\n        \"password\": \"pass\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}:{{port}}/login",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"login"
+							]
+						},
+						"description": "El admin podrá eliminar y hacer update de USERS, ver el RANKING DE TODOS LOS USERS y eliminar ROLLS de un USER"
+					},
+					"response": []
+				},
+				{
+					"name": "Login USER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"name\": \"user\",\n        \"password\": \"pass\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{IP}}:{{port}}/login",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"login"
+							]
+						},
+						"description": "Hacer un login con cuenta USER (luego no tendrá permisos para hacer varias acciones que solo puede hacer el admin)"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
